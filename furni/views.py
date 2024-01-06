@@ -56,11 +56,11 @@ class IndexView(TemplateView):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.success(request, 'Ваше повідомлення успішно наділсано!')
+            messages.success(request, 'Your message has been successfully sent!')
             return redirect('main:index')
         context = super().get_context_data(**kwargs)
         context['contact_form'] = ContactForm()
-        messages.error(request, "Помилки!")
+        messages.error(request, "Error!")
         return render(request, 'contact.html', context)
 
 

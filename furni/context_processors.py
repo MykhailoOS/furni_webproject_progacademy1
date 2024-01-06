@@ -1,4 +1,4 @@
-from .models import Home, Shop, BlogPost
+from .models import Home, Shop, BlogPost, Testimonials
 
 
 def home(request):
@@ -14,3 +14,8 @@ def blog(request):
 def shop(request):
     items = Shop.objects.filter(is_visible=True)
     return {'shop': items}
+
+
+def reviews(request):
+    items = Testimonials.objects.filter(is_visible=True)
+    return {'testimonials': items}

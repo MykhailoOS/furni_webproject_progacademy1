@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-sodqm_!&1sx+i3#7x0te_az6@yf^-@_0j)wmv)zqttxp7=89c0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', 'now.sh']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -72,7 +72,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'furni.context_processors.home',
                 'furni.context_processors.shop',
-                'furni.context_processors.blog'
+                'furni.context_processors.blog',
+                'furni.context_processors.reviews',
             ],
         },
     },

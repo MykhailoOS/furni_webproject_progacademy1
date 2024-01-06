@@ -46,6 +46,8 @@ class OurTeam(models.Model):
 
 
 class Testimonials(models.Model):
+    name = models.CharField(max_length=50, blank=True)
+    job = models.CharField(max_length=50, blank=True)
     text = models.TextField(max_length=500, blank=True)
     is_visible = models.BooleanField(default=True)
 

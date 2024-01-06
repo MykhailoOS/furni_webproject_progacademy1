@@ -1,9 +1,6 @@
-from django.conf.urls.static import static
-from django.contrib import admin
 from django.urls import path
 from furni.views import index, about, shop, thanks,  services, cart, blog, IndexView, ReserveView
 
-from furni_webproject import settings
 
 app_name = 'main'
 

@@ -1,4 +1,4 @@
-# furni_webproject/urls.py
+
 
 from django.conf.urls.static import static
 from django.contrib import admin
